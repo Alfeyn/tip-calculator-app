@@ -35,7 +35,7 @@ body {
 
         }
 
-        &::-webkit-inner-spin-button, 
+        &::-webkit-inner-spin-button,
         &::-webkit-outer-spin-button {
             -webkit-appearance: none;
             margin: 0;
@@ -122,6 +122,12 @@ body {
                         grid-template-columns: repeat(2, 1fr);
                         grid-template-rows: repeat(3, 1fr);
                         gap: 1rem;
+
+                        @include desktop {
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-template-rows: repeat(2, 1fr);
+
+                        }
 
                         li {
 

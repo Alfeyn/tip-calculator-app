@@ -116,6 +116,12 @@ body .main-container .main .calculator .tips .tip-input {
   grid-template-rows: repeat(3, 1fr);
   gap: 1rem;
 }
+@media screen and (min-width: 48rem) {
+  body .main-container .main .calculator .tips .tip-input {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
 body .main-container .main .calculator .tips .tip-input li button,
 body .main-container .main .calculator .tips .tip-input li .custom {
   height: 50px;
