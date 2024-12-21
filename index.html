@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/script.js"></script>
+    <title>Tip calculator app</title>
+</head>
+
+<body>
+    <div role="main" class="main-container">
+        <div class="head">
+            <img src="./images/logo.svg" alt="logo">
+        </div>
+        <div class="main">
+            <div class="calculator">
+                <div class="bill">
+                    <h3>Bill</h3>
+                    <span class="error-tag" id="billError"></span>
+                    <div class="bill-input">
+
+                        <label class="icon" for="bill"><img src="./images/icon-dollar.svg" alt="icon-dollar"></label>
+                        <input type="number" placeholder="0" name="amount" id="amount" value="">
+                    </div>
+                </div>
+                <div class="tips">
+                    <h3>Select Tip %</h3>
+                    <ul class="tip-input">
+                        <li><button id="5">5%</button></li>
+                        <li><button id="10">10%</button></li>
+                        <li><button id="15">15%</button></li>
+                        <li><button id="25">25%</button></li>
+                        <li><button id="50">50%</button></li>
+                        <li><input type="number" placeholder="Custom" class="custom" id="custom"  value=""></li>
+                    </ul>
+                </div>
+                <div class="people">
+                    <h3>Number of People</h3>
+                    <span class="error-tag" id="personError"></span>
+                    <div class="people-input">
+                        <label class="icon" for="person"> <img src="./images/icon-person.svg" alt="icon-person">
+                        </label>
+                        <input type="number" placeholder="0" name="person" id="peopleNum" value="">
+                    </div>
+                </div>
+            </div>
+            <div class="display">
+                <div class="amount">
+                    <div class="title">
+                        <h3>Tip Amount</h3>
+                        <p>/ person</p>
+                    </div>
+                    <p class="total" id="tipAmount">$0.00</p>
+                </div>
+                <div class="amount">
+                    <div class="title">
+                        <h3>Total</h3>
+                        <p>/ person</p>
+                    </div>
+                    <p class="total" id="total">$0.00</p>
+                </div>
+                <button id="reset">RESET</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://t.me/abualiy2" target="_blank">Akrem M.</a>.
+    </div>
+</body>
+
+</html>
